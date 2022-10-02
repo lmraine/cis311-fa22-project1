@@ -16,11 +16,11 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar bg-primary">
         <div class="container flex">
             <h1 class="logo"> <a href="/">Cloud9</a> </h1>
             <nav>
-                <ul>
+                <ul class="nav-items flex">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="docs.html">Docs</a></li>
@@ -30,16 +30,16 @@
     </div>
     
     <!-- Showcase -->
-    <section class="showcase">
+    <section class="showcase bg-primary">
         <div class="container grid">
             <div class="showcase-text">
-                <h1>Easier Deployment</h1>
-                <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
+                <h1 class="xl">Easier Deployment</h1>
+                <p class="lede my-3" >Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
                 <a href="features.html" class="btn btn-outline">Read More</a>
             </div>
 
             <div class="showcase-form card">
-                <h2>Request a Demo</h2>
+                <h2 class="md">Request a Demo</h2>
                  <!--  <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
                     <p class="hidden">
@@ -75,48 +75,50 @@
     <!-- Stats -->
     <section class="stats">
         <div class="container">
-            <h3 class="stats-heading">
+            <h3 class="stats-heading text-center sm">
                 Welcome to the best platform for building applications of all types with modern architecture and scaling
             </h3>
 
-            <div class="">
+            <div class="stats-icons grid-3 text-center">
                 <div>
-                    <i class="fas fa-server fa-3x"></i>
-                    <h3>10,349,405</h3>
-                    <p class="text-secondary">Deployments</p>
+                    <i class="fas fa-server fa-4x"></i>
+                    <h3 class="md">10,349,405</h3>
+                    <p class="text-secondary sm">Deployments</p>
                 </div>
                 <div>
-                    <i class="fas fa-upload fa-3x"></i>
-                    <h3>987 TB</h3>
-                    <p class="text-secondary">Published</p>
+                    <i class="fas fa-upload fa-4x"></i>
+                    <h3 class="md">987 TB</h3>
+                    <p class="text-secondary sm">Published</p>
                 </div>
                 <div>
-                    <i class="fas fa-project-diagram fa-3x"></i>
-                    <h3>2,343,265</h3>
-                    <p class="text-secondary">Projects</p>
+                    <i class="fas fa-project-diagram fa-4x"></i>
+                    <h3 class="md">2,343,265</h3>
+                    <p class="text-secondary sm">Projects</p>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Cli -->
     <section class="cli">
-        <div class="">
+        <div class="container grid">
             <img src="images/npm.png" alt="">
-            <div class="card">
-                <h3>Easy to use, cross platform CLI</h3>
-            </div>
-            <div class="card">
-                <h3>Deploy in seconds</h3>
+            <div class="cli-cards">
+                <div class="card">
+                    <h3>Easy to use, cross platform CLI</h3>
+                </div>
+                <div class="card">
+                    <h3>Deploy in seconds</h3>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Cloud -->
-    <section class="cloud">
-        <div class="">
+    <section class="cloud bg-primary">
+        <div class="container grid">
             <div class="text-center">
-                <h2 class="lg">Extreme Cloud Hosting</h2>
+                <h2 class="cloud-title my-1">Extreme Cloud Hosting</h2>
                 <p class="">Cloud hosting like you've never seen. Fast, efficient and scalable</p>
                 <a href="features.html" class="btn btn-dark">Read More</a>
             </div>
@@ -125,11 +127,11 @@
     </section>
 
     <!-- Languages -->
-    <section class="languages">
-        <h2 class="">
+    <section class="languages my-4">
+        <h2 class="text-center my-2">
             Supported Languages
         </h2>
-        <div class="">
+        <div class="container flex">
             <div class="card">
                 <h4>Node.js</h4>
                 <img src="images/logos/node.png" alt="">
@@ -162,14 +164,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer ">
-        <div class="">
+    <footer class="footer bg-dark">
+        <!--removed extra div around everything in the footer-->
+        <div class="container grid-3">
             <div>
                 <h1>Cloud9
                 </h1>
                 <p>Copyright &copy; 2020</p>
             </div>
-            <nav>
+            <nav class= "col-2">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Features</a></li>
@@ -182,7 +185,9 @@
                 <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
+
         </div>
+      
     </footer>
 </body>
 </html>
