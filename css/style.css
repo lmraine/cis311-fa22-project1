@@ -132,7 +132,7 @@ pre {
   right: 0;
   background-color: var(--primary-color);
   transform: skewY(-3deg);
-  z-index: -1;
+  z-index: -100;
 }
 
 
@@ -395,22 +395,24 @@ margin-left: 20px;
     grid-template-columns: 1fr;
   }
 
-  .showcase .container {
-    gap: 0;
-  }
-
   .showcase {
     height: 860px;
+    /* height: auto; */
   }
 
+
   .showcase-text{
-    margin-bottom: 0px;
+    text-align:center;
+    animation: slideInFromTop 1s ease-in;
   }
 
  .showcase-form {
-  margin-top: 0px;
+  position: relative;
   z-index: 100;
+  justify-self: center;
+  animation: slideInFromBottom 1s ease-in;
  }
+
 
 
   .xl {
@@ -422,16 +424,6 @@ margin-left: 20px;
     text-align: center;
   }
 
-  .showcase-text {
-    text-align:center;
-    animation: slideInFromTop 1s ease-in;
-  }
-
-  .showcase-form {
-    justify-self: center;
-    margin: auto;
-    animation: slideInFromBottom 1s ease-in;
-  }
 
   .stats-heading {
     text-align: center;
